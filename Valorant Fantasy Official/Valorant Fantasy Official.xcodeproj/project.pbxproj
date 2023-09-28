@@ -13,7 +13,8 @@
 		783363C12AC51E0B00E5FF1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783363C02AC51E0B00E5FF1E /* Preview Assets.xcassets */; };
 		783363CB2AC51E9200E5FF1E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363CA2AC51E9200E5FF1E /* User.swift */; };
 		783363CD2AC51EB700E5FF1E /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363CC2AC51EB700E5FF1E /* League.swift */; };
-		783363CF2AC51F0100E5FF1E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363CE2AC51F0100E5FF1E /* SwiftUIView.swift */; };
+		783363D32AC526D300E5FF1E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363D22AC526D300E5FF1E /* Login.swift */; };
+		783363D52AC5304200E5FF1E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363D42AC5304200E5FF1E /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,8 @@
 		783363C02AC51E0B00E5FF1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		783363CA2AC51E9200E5FF1E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		783363CC2AC51EB700E5FF1E /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
-		783363CE2AC51F0100E5FF1E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		783363D22AC526D300E5FF1E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Login.swift; path = "Valorant Fantasy Official/Login.swift"; sourceTree = SOURCE_ROOT; };
+		783363D42AC5304200E5FF1E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 				783363C82AC51E7000E5FF1E /* View */,
 				783363C72AC51E6300E5FF1E /* Model */,
 				783363B92AC51E0800E5FF1E /* Valorant_Fantasy_OfficialApp.swift */,
-				783363BB2AC51E0800E5FF1E /* ContentView.swift */,
 				783363BD2AC51E0B00E5FF1E /* Assets.xcassets */,
 				783363BF2AC51E0B00E5FF1E /* Preview Content */,
 			);
@@ -88,7 +89,9 @@
 		783363C82AC51E7000E5FF1E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				783363CE2AC51F0100E5FF1E /* SwiftUIView.swift */,
+				783363BB2AC51E0800E5FF1E /* ContentView.swift */,
+				783363D22AC526D300E5FF1E /* Login.swift */,
+				783363D42AC5304200E5FF1E /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,10 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				783363BC2AC51E0800E5FF1E /* ContentView.swift in Sources */,
+				783363D32AC526D300E5FF1E /* Login.swift in Sources */,
 				783363BA2AC51E0800E5FF1E /* Valorant_Fantasy_OfficialApp.swift in Sources */,
 				783363CD2AC51EB700E5FF1E /* League.swift in Sources */,
+				783363D52AC5304200E5FF1E /* Home.swift in Sources */,
 				783363CB2AC51E9200E5FF1E /* User.swift in Sources */,
-				783363CF2AC51F0100E5FF1E /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
