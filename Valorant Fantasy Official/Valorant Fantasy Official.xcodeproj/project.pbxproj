@@ -15,6 +15,9 @@
 		783363CD2AC51EB700E5FF1E /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363CC2AC51EB700E5FF1E /* League.swift */; };
 		783363D32AC526D300E5FF1E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363D22AC526D300E5FF1E /* Login.swift */; };
 		783363D52AC5304200E5FF1E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363D42AC5304200E5FF1E /* Home.swift */; };
+		783363D92AC6507F00E5FF1E /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363D82AC6507F00E5FF1E /* Team.swift */; };
+		783363DB2AC6514A00E5FF1E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363DA2AC6514A00E5FF1E /* Player.swift */; };
+		783363DF2AC6555200E5FF1E /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783363DE2AC6555200E5FF1E /* Match.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		783363CC2AC51EB700E5FF1E /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		783363D22AC526D300E5FF1E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Login.swift; path = "Valorant Fantasy Official/Login.swift"; sourceTree = SOURCE_ROOT; };
 		783363D42AC5304200E5FF1E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		783363D82AC6507F00E5FF1E /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		783363DA2AC6514A00E5FF1E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		783363DE2AC6555200E5FF1E /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		783363B82AC51E0800E5FF1E /* Valorant Fantasy Official */ = {
 			isa = PBXGroup;
 			children = (
+				78381F782ACB8976007DACE7 /* Database */,
 				783363C92AC51E7E00E5FF1E /* Controller */,
 				783363C82AC51E7000E5FF1E /* View */,
 				783363C72AC51E6300E5FF1E /* Model */,
@@ -82,6 +89,9 @@
 			children = (
 				783363CA2AC51E9200E5FF1E /* User.swift */,
 				783363CC2AC51EB700E5FF1E /* League.swift */,
+				783363D82AC6507F00E5FF1E /* Team.swift */,
+				783363DA2AC6514A00E5FF1E /* Player.swift */,
+				783363DE2AC6555200E5FF1E /* Match.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +111,13 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		78381F782ACB8976007DACE7 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +192,10 @@
 			files = (
 				783363BC2AC51E0800E5FF1E /* ContentView.swift in Sources */,
 				783363D32AC526D300E5FF1E /* Login.swift in Sources */,
+				783363DF2AC6555200E5FF1E /* Match.swift in Sources */,
 				783363BA2AC51E0800E5FF1E /* Valorant_Fantasy_OfficialApp.swift in Sources */,
+				783363D92AC6507F00E5FF1E /* Team.swift in Sources */,
+				783363DB2AC6514A00E5FF1E /* Player.swift in Sources */,
 				783363CD2AC51EB700E5FF1E /* League.swift in Sources */,
 				783363D52AC5304200E5FF1E /* Home.swift in Sources */,
 				783363CB2AC51E9200E5FF1E /* User.swift in Sources */,

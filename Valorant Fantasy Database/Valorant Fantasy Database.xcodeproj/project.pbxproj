@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7824C9D82ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7824C9D72ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift */; };
+		7824C9DA2ACBEE9A0004BD3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7824C9D92ACBEE9A0004BD3B /* ContentView.swift */; };
+		7824C9DC2ACBEE9C0004BD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7824C9DB2ACBEE9C0004BD3B /* Assets.xcassets */; };
+		7824C9DF2ACBEE9C0004BD3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7824C9DE2ACBEE9C0004BD3B /* Preview Assets.xcassets */; };
+		7824C9E62ACBEEE90004BD3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7824C9E52ACBEEE90004BD3B /* GoogleService-Info.plist */; };
+		7824C9E92ACBEF530004BD3B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7824C9E82ACBEF530004BD3B /* FirebaseAnalytics */; };
+		7824C9EC2ACC9BDB0004BD3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7824C9EB2ACC9BDB0004BD3B /* FirebaseAuth */; };
+		7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0272ACD223300AE7ACF /* AuthenticationView.swift */; };
+		7875D02A2ACD23BD00AE7ACF /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0292ACD23BD00AE7ACF /* SignInEmailView.swift */; };
+		7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */; };
+		7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02D2ACD2F3300AE7ACF /* RootView.swift */; };
+		7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02F2ACD334200AE7ACF /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7824C9D42ACBEE9A0004BD3B /* Valorant Fantasy Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Valorant Fantasy Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7824C9D72ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Valorant_Fantasy_DatabaseApp.swift; sourceTree = "<group>"; };
+		7824C9D92ACBEE9A0004BD3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7824C9DB2ACBEE9C0004BD3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7824C9DE2ACBEE9C0004BD3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7824C9E52ACBEEE90004BD3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7875D0272ACD223300AE7ACF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		7875D0292ACD23BD00AE7ACF /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		7875D02D2ACD2F3300AE7ACF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7875D02F2ACD334200AE7ACF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7824C9D12ACBEE9A0004BD3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7824C9E92ACBEF530004BD3B /* FirebaseAnalytics in Frameworks */,
+				7824C9EC2ACC9BDB0004BD3B /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7824C9CB2ACBEE9A0004BD3B = {
+			isa = PBXGroup;
+			children = (
+				7824C9D62ACBEE9A0004BD3B /* Valorant Fantasy Database */,
+				7824C9D52ACBEE9A0004BD3B /* Products */,
+				7824C9EA2ACC9BDB0004BD3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7824C9D52ACBEE9A0004BD3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7824C9D42ACBEE9A0004BD3B /* Valorant Fantasy Database.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7824C9D62ACBEE9A0004BD3B /* Valorant Fantasy Database */ = {
+			isa = PBXGroup;
+			children = (
+				7875D0262ACD220500AE7ACF /* Authentication */,
+				7824C9D72ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift */,
+				7824C9D92ACBEE9A0004BD3B /* ContentView.swift */,
+				7824C9E52ACBEEE90004BD3B /* GoogleService-Info.plist */,
+				7824C9DB2ACBEE9C0004BD3B /* Assets.xcassets */,
+				7824C9DD2ACBEE9C0004BD3B /* Preview Content */,
+			);
+			path = "Valorant Fantasy Database";
+			sourceTree = "<group>";
+		};
+		7824C9DD2ACBEE9C0004BD3B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7824C9DE2ACBEE9C0004BD3B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7824C9EA2ACC9BDB0004BD3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7875D0262ACD220500AE7ACF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7875D0272ACD223300AE7ACF /* AuthenticationView.swift */,
+				7875D0292ACD23BD00AE7ACF /* SignInEmailView.swift */,
+				7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */,
+				7875D02D2ACD2F3300AE7ACF /* RootView.swift */,
+				7875D02F2ACD334200AE7ACF /* SettingsView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7824C9D32ACBEE9A0004BD3B /* Valorant Fantasy Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7824C9E22ACBEE9C0004BD3B /* Build configuration list for PBXNativeTarget "Valorant Fantasy Database" */;
+			buildPhases = (
+				7824C9D02ACBEE9A0004BD3B /* Sources */,
+				7824C9D12ACBEE9A0004BD3B /* Frameworks */,
+				7824C9D22ACBEE9A0004BD3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Valorant Fantasy Database";
+			packageProductDependencies = (
+				7824C9E82ACBEF530004BD3B /* FirebaseAnalytics */,
+				7824C9EB2ACC9BDB0004BD3B /* FirebaseAuth */,
+			);
+			productName = "Valorant Fantasy Database";
+			productReference = 7824C9D42ACBEE9A0004BD3B /* Valorant Fantasy Database.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7824C9CC2ACBEE9A0004BD3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7824C9D32ACBEE9A0004BD3B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7824C9CF2ACBEE9A0004BD3B /* Build configuration list for PBXProject "Valorant Fantasy Database" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7824C9CB2ACBEE9A0004BD3B;
+			packageReferences = (
+				7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 7824C9D52ACBEE9A0004BD3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7824C9D32ACBEE9A0004BD3B /* Valorant Fantasy Database */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7824C9D22ACBEE9A0004BD3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7824C9DF2ACBEE9C0004BD3B /* Preview Assets.xcassets in Resources */,
+				7824C9DC2ACBEE9C0004BD3B /* Assets.xcassets in Resources */,
+				7824C9E62ACBEEE90004BD3B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7824C9D02ACBEE9A0004BD3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */,
+				7824C9DA2ACBEE9A0004BD3B /* ContentView.swift in Sources */,
+				7824C9D82ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift in Sources */,
+				7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */,
+				7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */,
+				7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */,
+				7875D02A2ACD23BD00AE7ACF /* SignInEmailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7824C9E02ACBEE9C0004BD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7824C9E12ACBEE9C0004BD3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7824C9E32ACBEE9C0004BD3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Valorant Fantasy Database/Preview Content\"";
+				DEVELOPMENT_TEAM = C439PTW4DB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ValFantasy.Valorant-Fantasy-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7824C9E42ACBEE9C0004BD3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Valorant Fantasy Database/Preview Content\"";
+				DEVELOPMENT_TEAM = C439PTW4DB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ValFantasy.Valorant-Fantasy-Database";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7824C9CF2ACBEE9A0004BD3B /* Build configuration list for PBXProject "Valorant Fantasy Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7824C9E02ACBEE9C0004BD3B /* Debug */,
+				7824C9E12ACBEE9C0004BD3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7824C9E22ACBEE9C0004BD3B /* Build configuration list for PBXNativeTarget "Valorant Fantasy Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7824C9E32ACBEE9C0004BD3B /* Debug */,
+				7824C9E42ACBEE9C0004BD3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7824C9E82ACBEF530004BD3B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7824C9EB2ACC9BDB0004BD3B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7824C9CC2ACBEE9A0004BD3B /* Project object */;
+}
