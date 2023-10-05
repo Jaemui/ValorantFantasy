@@ -2,27 +2,27 @@
 //  SignInEmailView.swift
 //  Valorant Fantasy Database
 //
-//  Created by Joshua Tran on 10/4/23.
+//  Created by Joshua Tran on 10/3/23.
 //
 
 import SwiftUI
 
 @MainActor
-final class SignInEmailViewModel: ObservableObject{
+final class SignUpEmailViewModel: ObservableObject{
     
     @Published var email = ""
     @Published var password = ""
     
-    func signIn() async throws{
+    func signUp() async throws{
         guard !email.isEmpty, !password.isEmpty else{
             print("No email or pawword found.")
             return
         }
-        try await AuthenticationManager.shared.signInUser(email: email, password: password)
+        try await AuthenticationManager.shared.createUser(email: email, password: password)
     }
 }
-struct SignInEmailView: View {
-    @StateObject private var viewModel = SignInEmailViewModel()
+struct SignUpEmailView: View {
+    @StateObject private var viewModel = SignUpEmailViewModel()
     @Binding var showSignInView: Bool
     
     var body: some View {
@@ -47,7 +47,7 @@ struct SignInEmailView: View {
                 Button{
                     Task{
                         do{
-                            try await viewModel.signIn()
+                            try await viewModel.signUp()
                             showSignInView = false
                         }
                         catch{
@@ -66,8 +66,8 @@ struct SignInEmailView: View {
     }
 }
 
-struct SignInEmailView_Previews: PreviewProvider {
+struct SignUpEmailView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInEmailView(showSignInView: .constant(false))
+        SignUpEmailView(showSignInView: .constant(false))
     }
 }

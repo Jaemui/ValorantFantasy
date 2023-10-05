@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AuthenticationView: View {
+    @Binding var showSignInvView: Bool
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -17,9 +19,18 @@ struct AuthenticationView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     NavigationLink {
-                        SignInEmailView()
+                        SignUpEmailView(showSignInView: $showSignInvView)
                     } label:{
-                        Text("Sign in With Email")
+                        Text("Sign Up With Email")
+                            .foregroundColor(.white)
+                            .frame(width:300, height:50)
+                            .background(Color.red)
+                            .cornerRadius(10)
+                    }
+                    NavigationLink{
+                        SignInEmailView(showSignInView: $showSignInvView)
+                    } label:{
+                        Text("Already have an acount? Sign In")
                             .foregroundColor(.white)
                             .frame(width:300, height:50)
                             .background(Color.red)
@@ -33,6 +44,6 @@ struct AuthenticationView: View {
 
 struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationView()
+        AuthenticationView(showSignInvView: .constant(false))
     }
 }

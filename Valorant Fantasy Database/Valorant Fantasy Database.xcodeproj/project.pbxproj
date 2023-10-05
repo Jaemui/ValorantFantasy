@@ -15,10 +15,11 @@
 		7824C9E92ACBEF530004BD3B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7824C9E82ACBEF530004BD3B /* FirebaseAnalytics */; };
 		7824C9EC2ACC9BDB0004BD3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7824C9EB2ACC9BDB0004BD3B /* FirebaseAuth */; };
 		7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0272ACD223300AE7ACF /* AuthenticationView.swift */; };
-		7875D02A2ACD23BD00AE7ACF /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0292ACD23BD00AE7ACF /* SignInEmailView.swift */; };
+		7875D02A2ACD23BD00AE7ACF /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0292ACD23BD00AE7ACF /* SignUpEmailView.swift */; };
 		7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */; };
 		7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02D2ACD2F3300AE7ACF /* RootView.swift */; };
 		7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02F2ACD334200AE7ACF /* SettingsView.swift */; };
+		7875D0322ACE5C5700AE7ACF /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +30,11 @@
 		7824C9DE2ACBEE9C0004BD3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7824C9E52ACBEEE90004BD3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7875D0272ACD223300AE7ACF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
-		7875D0292ACD23BD00AE7ACF /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		7875D0292ACD23BD00AE7ACF /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
 		7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		7875D02D2ACD2F3300AE7ACF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7875D02F2ACD334200AE7ACF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				7875D0272ACD223300AE7ACF /* AuthenticationView.swift */,
-				7875D0292ACD23BD00AE7ACF /* SignInEmailView.swift */,
+				7875D0292ACD23BD00AE7ACF /* SignUpEmailView.swift */,
 				7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */,
 				7875D02D2ACD2F3300AE7ACF /* RootView.swift */,
 				7875D02F2ACD334200AE7ACF /* SettingsView.swift */,
+				7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -186,10 +189,11 @@
 				7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */,
 				7824C9DA2ACBEE9A0004BD3B /* ContentView.swift in Sources */,
 				7824C9D82ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift in Sources */,
+				7875D0322ACE5C5700AE7ACF /* SignInEmailView.swift in Sources */,
 				7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */,
 				7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */,
 				7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */,
-				7875D02A2ACD23BD00AE7ACF /* SignInEmailView.swift in Sources */,
+				7875D02A2ACD23BD00AE7ACF /* SignUpEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
