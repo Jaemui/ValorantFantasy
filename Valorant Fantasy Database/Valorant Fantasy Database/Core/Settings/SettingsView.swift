@@ -6,13 +6,7 @@
 //
 
 import SwiftUI
-@MainActor
-final class SettingsViewModel: ObservableObject{
-    
-    func signOut() throws{
-        try AuthenticationManager.shared.signOut()
-    }
-}
+
 struct SettingsView: View {
     
     @StateObject private var viewModel = SettingsViewModel()

@@ -18,12 +18,15 @@ final class SignUpEmailViewModel: ObservableObject{
             print("No email or pawword found.")
             return
         }
-        try await AuthenticationManager.shared.createUser(email: email, password: password)
+        let authDataResult = try await AuthenticationManager.shared.createUser(email: email, password: password)
+        try await UserManager.shared.createNewUser(auth: authDataResult)
     }
 }
 struct SignUpEmailView: View {
     @StateObject private var viewModel = SignUpEmailViewModel()
     @Binding var showSignInView: Bool
+    @State private var isSignUpSuccessful = false
+
     
     var body: some View {
         ZStack{
@@ -48,7 +51,7 @@ struct SignUpEmailView: View {
                     Task{
                         do{
                             try await viewModel.signUp()
-                            showSignInView = false
+                            isSignUpSuccessful = true
                         }
                         catch{
                             print(error)
@@ -61,6 +64,12 @@ struct SignUpEmailView: View {
                         .background(Color.red)
                         .cornerRadius(10)
                 }
+                NavigationLink(destination: UserRegistrationView(showSignInView: $showSignInView),
+                    isActive: $isSignUpSuccessful,
+                    label: {
+                            EmptyView()
+                        }
+                    )
             }
         }
     }

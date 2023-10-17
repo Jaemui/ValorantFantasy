@@ -20,6 +20,12 @@
 		7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02D2ACD2F3300AE7ACF /* RootView.swift */; };
 		7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02F2ACD334200AE7ACF /* SettingsView.swift */; };
 		7875D0322ACE5C5700AE7ACF /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */; };
+		78BB93FF2ADE394F00601734 /* UserRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BB93FE2ADE394F00601734 /* UserRegistrationView.swift */; };
+		78CCDFB02ADD0404000C216D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 78CCDFAF2ADD0404000C216D /* FirebaseFirestore */; };
+		78CCDFB22ADD0404000C216D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78CCDFB12ADD0404000C216D /* FirebaseFirestoreSwift */; };
+		78CCDFB62ADD051F000C216D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCDFB52ADD051F000C216D /* SettingsViewModel.swift */; };
+		78CCDFBB2ADD05BA000C216D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCDFBA2ADD05BA000C216D /* ProfileView.swift */; };
+		78CCDFBE2ADD0ACD000C216D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCDFBD2ADD0ACD000C216D /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,10 @@
 		7875D02D2ACD2F3300AE7ACF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7875D02F2ACD334200AE7ACF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		78BB93FE2ADE394F00601734 /* UserRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationView.swift; sourceTree = "<group>"; };
+		78CCDFB52ADD051F000C216D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		78CCDFBA2ADD05BA000C216D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		78CCDFBD2ADD0ACD000C216D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,8 @@
 			files = (
 				7824C9E92ACBEF530004BD3B /* FirebaseAnalytics in Frameworks */,
 				7824C9EC2ACC9BDB0004BD3B /* FirebaseAuth in Frameworks */,
+				78CCDFB02ADD0404000C216D /* FirebaseFirestore in Frameworks */,
+				78CCDFB22ADD0404000C216D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +82,8 @@
 		7824C9D62ACBEE9A0004BD3B /* Valorant Fantasy Database */ = {
 			isa = PBXGroup;
 			children = (
+				78CCDFBC2ADD0ABC000C216D /* Firestore */,
+				78CCDFB32ADD0484000C216D /* Core */,
 				7875D0262ACD220500AE7ACF /* Authentication */,
 				7824C9D72ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift */,
 				7824C9D92ACBEE9A0004BD3B /* ContentView.swift */,
@@ -98,14 +112,64 @@
 		7875D0262ACD220500AE7ACF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				7875D0272ACD223300AE7ACF /* AuthenticationView.swift */,
 				7875D0292ACD23BD00AE7ACF /* SignUpEmailView.swift */,
 				7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */,
-				7875D02D2ACD2F3300AE7ACF /* RootView.swift */,
-				7875D02F2ACD334200AE7ACF /* SettingsView.swift */,
-				7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		78CCDFB32ADD0484000C216D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				78CCDFB92ADD05A1000C216D /* Profile */,
+				78CCDFB72ADD0547000C216D /* Authentication */,
+				78CCDFB42ADD0501000C216D /* Settings */,
+				7875D02D2ACD2F3300AE7ACF /* RootView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		78CCDFB42ADD0501000C216D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7875D02F2ACD334200AE7ACF /* SettingsView.swift */,
+				78CCDFB52ADD051F000C216D /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		78CCDFB72ADD0547000C216D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				78CCDFB82ADD0586000C216D /* Subviews */,
+				7875D0272ACD223300AE7ACF /* AuthenticationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		78CCDFB82ADD0586000C216D /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7875D0312ACE5C5700AE7ACF /* SignInEmailView.swift */,
+				78BB93FE2ADE394F00601734 /* UserRegistrationView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		78CCDFB92ADD05A1000C216D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				78CCDFBA2ADD05BA000C216D /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		78CCDFBC2ADD0ABC000C216D /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				78CCDFBD2ADD0ACD000C216D /* UserManager.swift */,
+			);
+			path = Firestore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +191,8 @@
 			packageProductDependencies = (
 				7824C9E82ACBEF530004BD3B /* FirebaseAnalytics */,
 				7824C9EB2ACC9BDB0004BD3B /* FirebaseAuth */,
+				78CCDFAF2ADD0404000C216D /* FirebaseFirestore */,
+				78CCDFB12ADD0404000C216D /* FirebaseFirestoreSwift */,
 			);
 			productName = "Valorant Fantasy Database";
 			productReference = 7824C9D42ACBEE9A0004BD3B /* Valorant Fantasy Database.app */;
@@ -188,12 +254,16 @@
 			files = (
 				7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */,
 				7824C9DA2ACBEE9A0004BD3B /* ContentView.swift in Sources */,
+				78CCDFBB2ADD05BA000C216D /* ProfileView.swift in Sources */,
 				7824C9D82ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift in Sources */,
 				7875D0322ACE5C5700AE7ACF /* SignInEmailView.swift in Sources */,
 				7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */,
+				78BB93FF2ADE394F00601734 /* UserRegistrationView.swift in Sources */,
 				7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */,
 				7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */,
 				7875D02A2ACD23BD00AE7ACF /* SignUpEmailView.swift in Sources */,
+				78CCDFBE2ADD0ACD000C216D /* UserManager.swift in Sources */,
+				78CCDFB62ADD051F000C216D /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +486,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		78CCDFAF2ADD0404000C216D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		78CCDFB12ADD0404000C216D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7824C9E72ACBEF530004BD3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

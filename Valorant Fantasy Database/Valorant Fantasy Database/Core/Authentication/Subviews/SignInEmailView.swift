@@ -18,7 +18,9 @@ final class SignInEmailViewModel: ObservableObject{
             print("No email or pawword found.")
             return
         }
-        try await AuthenticationManager.shared.signInUser(email: email, password: password)
+        //come back and make a separate viewModel for these signIn functions
+        let authDataResult = try await AuthenticationManager.shared.signInUser(email: email, password: password)
+        try await UserManager.shared.createNewUser(auth: authDataResult)
     }
 }
 struct SignInEmailView: View {
@@ -55,7 +57,7 @@ struct SignInEmailView: View {
                         }
                     }
                 }label:{
-                    Text("Sign up")
+                    Text("Sign In")
                         .foregroundColor(.white)
                         .frame(width:300, height:50)
                         .background(Color.red)
