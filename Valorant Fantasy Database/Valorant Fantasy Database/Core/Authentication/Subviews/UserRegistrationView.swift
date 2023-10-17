@@ -48,7 +48,7 @@ struct UserRegistrationView: View {
                     .frame(width:300, height:50)
                     .background(Color.gray.opacity(0.9))
                     .cornerRadius(10)
-                    
+                    //filler
                 
                     
                 Button{
