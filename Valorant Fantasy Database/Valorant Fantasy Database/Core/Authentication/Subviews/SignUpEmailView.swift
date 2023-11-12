@@ -12,6 +12,10 @@ final class SignUpEmailViewModel: ObservableObject{
     
     @Published var email = ""
     @Published var password = ""
+    @Published var username = "";
+    @Published var birthdate = Date.now;
+//    @Published var premium = false;
+    
     
     func signUp() async throws{
         guard !email.isEmpty, !password.isEmpty else{
@@ -19,11 +23,13 @@ final class SignUpEmailViewModel: ObservableObject{
             return
         }
         let authDataResult = try await AuthenticationManager.shared.createUser(email: email, password: password)
-        try await UserManager.shared.createNewUser(auth: authDataResult)
+        let user = DBUser(userId: authDataResult.uid, email: authDataResult.email, photoUrl: authDataResult.photoUrl, dateCreated: Date(), username: username, birthday: birthdate)
+        try await UserManager.shared.createNewUser(user: user)
+//        try await UserManager.shared.createNewUser(auth: authDataResult)
     }
 }
 struct SignUpEmailView: View {
-    @StateObject private var viewModel = SignUpEmailViewModel()
+    @EnvironmentObject var viewModel: SignUpEmailViewModel 
     @Binding var showSignInView: Bool
     @State private var isSignUpSuccessful = false
 
@@ -50,12 +56,12 @@ struct SignUpEmailView: View {
                 Button{
                     Task{
                         do{
-                            try await viewModel.signUp()
+//                            try await viewModel.signUp()
                             isSignUpSuccessful = true
                         }
-                        catch{
-                            print(error)
-                        }
+//                        catch{
+//                            print(error)
+//                        }
                     }
                 }label:{
                     Text("Sign up")
@@ -64,7 +70,8 @@ struct SignUpEmailView: View {
                         .background(Color.red)
                         .cornerRadius(10)
                 }
-                NavigationLink(destination: UserRegistrationView(showSignInView: $showSignInView),
+                NavigationLink(
+                    destination: UserRegistrationView(showSignInView: $showSignInView).environmentObject(viewModel),
                     isActive: $isSignUpSuccessful,
                     label: {
                             EmptyView()
@@ -75,8 +82,8 @@ struct SignUpEmailView: View {
     }
 }
 
-struct SignUpEmailView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpEmailView(showSignInView: .constant(false))
-    }
-}
+//struct SignUpEmailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignUpEmailView(showSignInView: .constant(false))
+//    }
+//}

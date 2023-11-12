@@ -19,7 +19,7 @@ struct AuthenticationView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     NavigationLink {
-                        SignUpEmailView(showSignInView: $showSignInvView)
+                        RegistrationView(showSignInView: $showSignInvView)
                     } label:{
                         Text("Sign Up With Email")
                             .foregroundColor(.white)
