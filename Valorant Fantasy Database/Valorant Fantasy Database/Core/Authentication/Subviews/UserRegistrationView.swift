@@ -32,8 +32,6 @@ struct UserRegistrationView: View {
                     .background(Color.gray.opacity(0.9))
                     .cornerRadius(10)
                     //filler
-                
-                    
                 Button{
                     Task{
                         do{

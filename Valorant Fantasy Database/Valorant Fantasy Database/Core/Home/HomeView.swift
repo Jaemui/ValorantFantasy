@@ -9,37 +9,48 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var viewModel = ProfileViewModel()
+    @Binding var showSignInView: Bool
     
     var body: some View {
         let user = viewModel.user
         VStack{
-            NavigationLink{
-                
-            }
-            label: {
-                Text("Create a League")
-            }
-            NavigationLink{
-                
-            }
-            label: {
-                Text("Join a League")
-            }
-            NavigationLink{
-                
-            }
-            label:{
-                Text("Your Leagues")
-            }
+            NavigationLink(
+                destination: HomeView(showSignInView: $showSignInView),
+                label: {
+                    Text("Create a League")
+                }
+            )
+            NavigationLink(
+                destination: HomeView(showSignInView: $showSignInView),
+                label: {
+                    Text("Join a League")
+                }
+            )
+            NavigationLink(
+                destination: HomeView(showSignInView: $showSignInView),
+                label:{
+                    Text("Your Leagues")
+                }
+            )
+            
+            NavigationLink(
+                destination: ProfileView(showSignInView: $showSignInView),
+                label:{
+                    Text("Profile View")
+                }
+            )
         }
         .navigationTitle("Welcome \(user?.username ?? "default")")
+        .task{
+            try? await viewModel.loadCurrentUser()
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack{
-            HomeView()
+            HomeView(showSignInView: .constant(false))
         }
     }
 }

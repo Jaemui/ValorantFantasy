@@ -20,7 +20,6 @@ final class SignInEmailViewModel: ObservableObject{
         }
         //come back and make a separate viewModel for these signIn functions
         let authDataResult = try await AuthenticationManager.shared.signInUser(email: email, password: password)
-        try await UserManager.shared.createNewUser(auth: authDataResult)
     }
 }
 struct SignInEmailView: View {

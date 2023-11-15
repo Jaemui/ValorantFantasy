@@ -7,27 +7,6 @@
 
 import SwiftUI
 
-@MainActor
-final class SignUpEmailViewModel: ObservableObject{
-    
-    @Published var email = ""
-    @Published var password = ""
-    @Published var username = "";
-    @Published var birthdate = Date.now;
-//    @Published var premium = false;
-    
-    
-    func signUp() async throws{
-        guard !email.isEmpty, !password.isEmpty else{
-            print("No email or pawword found.")
-            return
-        }
-        let authDataResult = try await AuthenticationManager.shared.createUser(email: email, password: password)
-        let user = DBUser(userId: authDataResult.uid, email: authDataResult.email, photoUrl: authDataResult.photoUrl, dateCreated: Date(), username: username, birthday: birthdate)
-        try await UserManager.shared.createNewUser(user: user)
-//        try await UserManager.shared.createNewUser(auth: authDataResult)
-    }
-}
 struct SignUpEmailView: View {
     @EnvironmentObject var viewModel: SignUpEmailViewModel 
     @Binding var showSignInView: Bool
