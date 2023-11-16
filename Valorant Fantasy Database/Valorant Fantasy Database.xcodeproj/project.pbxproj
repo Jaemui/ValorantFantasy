@@ -16,6 +16,9 @@
 		7824C9EC2ACC9BDB0004BD3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7824C9EB2ACC9BDB0004BD3B /* FirebaseAuth */; };
 		782D9DF72B00CC380060D669 /* SignUpEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D9DF62B00CC380060D669 /* SignUpEmailViewModel.swift */; };
 		782D9DF92B0343DA0060D669 /* DatabaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D9DF82B0343DA0060D669 /* DatabaseModels.swift */; };
+		782D9E002B04AF4E0060D669 /* UserLeaguesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D9DFF2B04AF4E0060D669 /* UserLeaguesView.swift */; };
+		782D9E022B04CD280060D669 /* LeagueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D9E012B04CD280060D669 /* LeagueManager.swift */; };
+		782D9E042B04CF3B0060D669 /* LeagueRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D9E032B04CF3B0060D669 /* LeagueRegistrationView.swift */; };
 		7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0272ACD223300AE7ACF /* AuthenticationView.swift */; };
 		7875D02A2ACD23BD00AE7ACF /* SignUpEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D0292ACD23BD00AE7ACF /* SignUpEmailView.swift */; };
 		7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */; };
@@ -41,6 +44,9 @@
 		7824C9E52ACBEEE90004BD3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		782D9DF62B00CC380060D669 /* SignUpEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewModel.swift; sourceTree = "<group>"; };
 		782D9DF82B0343DA0060D669 /* DatabaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModels.swift; sourceTree = "<group>"; };
+		782D9DFF2B04AF4E0060D669 /* UserLeaguesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLeaguesView.swift; sourceTree = "<group>"; };
+		782D9E012B04CD280060D669 /* LeagueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueManager.swift; sourceTree = "<group>"; };
+		782D9E032B04CF3B0060D669 /* LeagueRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRegistrationView.swift; sourceTree = "<group>"; };
 		7875D0272ACD223300AE7ACF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		7875D0292ACD23BD00AE7ACF /* SignUpEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailView.swift; sourceTree = "<group>"; };
 		7875D02B2ACD29C000AE7ACF /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
@@ -125,6 +131,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		782D9DFC2B04AEFE0060D669 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				782D9DFF2B04AF4E0060D669 /* UserLeaguesView.swift */,
+				782D9E032B04CF3B0060D669 /* LeagueRegistrationView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		7875D0262ACD220500AE7ACF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 		78BB94002ADF267200601734 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				782D9DFC2B04AEFE0060D669 /* Subviews */,
 				78BB94012ADF269300601734 /* HomeView.swift */,
 			);
 			path = Home;
@@ -196,6 +212,7 @@
 			children = (
 				78CCDFBD2ADD0ACD000C216D /* UserManager.swift */,
 				782D9DF82B0343DA0060D669 /* DatabaseModels.swift */,
+				782D9E012B04CD280060D669 /* LeagueManager.swift */,
 			);
 			path = Firestore;
 			sourceTree = "<group>";
@@ -283,14 +300,17 @@
 				782D9DF72B00CC380060D669 /* SignUpEmailViewModel.swift in Sources */,
 				7875D0302ACD334200AE7ACF /* SettingsView.swift in Sources */,
 				7824C9DA2ACBEE9A0004BD3B /* ContentView.swift in Sources */,
+				782D9E002B04AF4E0060D669 /* UserLeaguesView.swift in Sources */,
 				78BB94022ADF269300601734 /* HomeView.swift in Sources */,
 				78CBB6412AEA148A00A58A00 /* RegistrationView.swift in Sources */,
 				78CCDFBB2ADD05BA000C216D /* ProfileView.swift in Sources */,
 				7824C9D82ACBEE9A0004BD3B /* Valorant_Fantasy_DatabaseApp.swift in Sources */,
+				782D9E042B04CF3B0060D669 /* LeagueRegistrationView.swift in Sources */,
 				7875D0322ACE5C5700AE7ACF /* SignInEmailView.swift in Sources */,
 				782D9DF92B0343DA0060D669 /* DatabaseModels.swift in Sources */,
 				7875D02E2ACD2F3300AE7ACF /* RootView.swift in Sources */,
 				78BB93FF2ADE394F00601734 /* UserRegistrationView.swift in Sources */,
+				782D9E022B04CD280060D669 /* LeagueManager.swift in Sources */,
 				7875D0282ACD223300AE7ACF /* AuthenticationView.swift in Sources */,
 				7875D02C2ACD29C000AE7ACF /* AuthenticationManager.swift in Sources */,
 				7875D02A2ACD23BD00AE7ACF /* SignUpEmailView.swift in Sources */,

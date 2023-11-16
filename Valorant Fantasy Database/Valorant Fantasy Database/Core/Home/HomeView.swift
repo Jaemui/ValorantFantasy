@@ -15,7 +15,7 @@ struct HomeView: View {
         let user = viewModel.user
         VStack{
             NavigationLink(
-                destination: HomeView(showSignInView: $showSignInView),
+                destination: LeagueRegistrationView(),
                 label: {
                     Text("Create a League")
                 }
@@ -27,7 +27,7 @@ struct HomeView: View {
                 }
             )
             NavigationLink(
-                destination: HomeView(showSignInView: $showSignInView),
+                destination: UserLeaguesView(),
                 label:{
                     Text("Your Leagues")
                 }

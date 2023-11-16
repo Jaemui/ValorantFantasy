@@ -35,7 +35,6 @@ struct UserRegistrationView: View {
                 Button{
                     Task{
                         do{
-//                            try await UserRegister.registerUser()
                             try await viewModel.signUp()
                             showSignInView = false
                         }

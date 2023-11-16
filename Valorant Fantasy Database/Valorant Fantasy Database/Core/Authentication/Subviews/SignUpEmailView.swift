@@ -33,15 +33,7 @@ struct SignUpEmailView: View {
                     .cornerRadius(10)
 //                    .border(.red, width:CGFloat(wrongPassword))
                 Button{
-                    Task{
-                        do{
-//                            try await viewModel.signUp()
-                            isSignUpSuccessful = true
-                        }
-//                        catch{
-//                            print(error)
-//                        }
-                    }
+                    isSignUpSuccessful = true
                 }label:{
                     Text("Sign up")
                         .foregroundColor(.white)

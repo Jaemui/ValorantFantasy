@@ -44,6 +44,15 @@ struct DBUser: Codable{
         self.premium = premium 
                 
     }
+    init(){
+        self.userId = ""
+        self.email = ""
+        self.photoUrl = ""
+        self.dateCreated = nil
+        self.username = ""
+        self.birthdate = nil
+        self.premium = false
+    }
     enum CodingKeys: String, CodingKey {
         case userId = "user_id"
         case email = "email"
@@ -76,14 +85,27 @@ struct DBUser: Codable{
     }
 }
 
-//struct League: Codable{
-//    let leagueId: String
-//    let leagueName: String
-//    let host: DBUser
-//    let users: [DBUser]?
-//    let dateCreated: Date?
+struct League: Codable{
+    var leagueId: String?
+    let leagueName: String
+    let host: DBUser
+    let users: [DBUser]?
+    let dateCreated: Date?
 //    let tournament: Tournament
-//}
+    init(
+        leagueId: String? = nil,
+        leagueName: String,
+        host: DBUser,
+        users: [DBUser]? = nil,
+        dateCreated: Date? = nil
+    ){
+        self.leagueId = leagueId
+        self.leagueName = leagueName
+        self.host = host
+        self.users = users
+        self.dateCreated = dateCreated
+        }
+}
 //
 //struct Tournament: Codable{
 //    let tournamentId: String

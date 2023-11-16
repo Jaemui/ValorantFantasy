@@ -13,6 +13,7 @@ final class SignInEmailViewModel: ObservableObject{
     @Published var email = ""
     @Published var password = ""
     
+    //IMPORTANT COME BACK TO THIS AND FIX VALIDATION!!!!!!
     func signIn() async throws{
         guard !email.isEmpty, !password.isEmpty else{
             print("No email or pawword found.")
